@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ImageIdStyle">
+        <item name="android:layout_marginTop">@dimen/image_id_top_margin</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/image_id_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="InvalidateCacheButtonStyle">
+        <item name="android:layout_margin">@dimen/invalidate_cache_button_margin</item>
+        <item name="android:text">@string/invalidate_cache</item>
+    </style>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+         <variable
+            name="imageId"
+            type="Integer" />
+
+        <variable
+            name="photoUrl"
+            type="String" />
+
+        <variable
+            name="bitmap"
+            type="android.graphics.Bitmap" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/photoId"
+            style="@style/ImageIdStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:imageId="@{imageId}" />
+
+        <ImageView
+            android:id="@+id/photoImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/image_description"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            app:imageUrl="@{photoUrl}"
+            app:bitmap="@{bitmap}"
+            tools:src="@tools:sample/backgrounds/scenic" />
+    </LinearLayout>
+
+</layout>
